@@ -1,0 +1,63 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "DB Shell",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}\\custom_template_project\\manage.py",
+            "python": "${workspaceFolder}\\.venv\\Scripts\\python.exe", 
+            "args": [
+                "dbshell"
+            ],
+            "django": true,
+
+        },
+
+
+        {
+            "name": "Python Shell",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}\\custom_template_project\\manage.py",
+            "python": "${workspaceFolder}\\.venv\\Scripts\\python.exe", 
+            "args": [
+                "shell"
+            ],
+            "django": true,
+            "justMyCode": true
+        },
+
+
+        {
+            "name": "meke migrations",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}\\custom_template_project\\manage.py",
+            "python": "${workspaceFolder}\\.venv\\Scripts\\python.exe", 
+            "args": [
+                "makemigrations"
+            ],
+            "django": true,
+            "justMyCode": true
+        },
+
+
+        {
+            "name": "Django runserver",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}\\custom_template_project\\manage.py",
+            "python": "${workspaceFolder}\\.venv\\Scripts\\python.exe", 
+            "args": [
+                "runserver", "0.0.0.0:7866"
+            ],
+            "django": true,
+            "justMyCode": true
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "generictemplates"
+version = "0.1"
+description = "This project is intended to allow users to upload templates and in those template map custom values for different records"
+authors = ["gs windows machine latest <gs@gs.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+Django = "^5.0.1"
+djangorestframework = "^3.14.0"
+psycopg2 = "^2.9.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
