@@ -17,4 +17,12 @@ class Placeholder(models.Model):
 
     def __str__(self):
         return self.name
+    
+class Employee(models.Model):
+    emp_code = models.IntegerField()
+    name = models.CharField(max_length=50)
+    designation = models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.name
 
